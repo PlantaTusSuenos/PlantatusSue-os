@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planta tus Sueños | Vivero en Paso de los Libres</title>
+<meta name="description" content="Vivero en Paso de los Libres, Corrientes: plantas de interior y exterior, insumos, trabajos de jardín, limpiezas y presupuestos a medida.">
+<meta property="og:title" content="Planta tus Sueños | Vivero en Paso de los Libres">
+<meta property="og:description" content="Verde para adentro y para afuera. Pedí tu presupuesto por WhatsApp.">
+<meta name="theme-color" content="#14281E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14281E;--leaf:#2E7D4F;--fern:#BFD9B5;--mist:#F1F6EE;--sun:#F4C430;--white:#fff}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Figtree,system-ui,sans-serif;color:var(--ink);background:var(--mist);line-height:1.6;font-size:18px;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.05;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+/* hero */
+.hero{background:var(--ink);color:var(--mist);position:relative;overflow:hidden;padding:72px 0 96px}
+.hero .wrap{position:relative;z-index:2}
+.brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.1rem;color:var(--fern);margin-bottom:56px}
+.hero h1{font-size:clamp(2.8rem,10vw,6.4rem);font-weight:800;max-width:11ch}
+.hero p{max-width:34ch;margin:24px 0 32px;color:var(--fern);font-size:1.15rem}
+.btn{display:inline-block;background:var(--sun);color:var(--ink);font-weight:600;text-decoration:none;padding:15px 26px;border-radius:999px;transition:transform .2s}
+.btn:hover,.btn:focus-visible{transform:scale(1.05)}
+.btn.alt{background:transparent;border:2px solid var(--fern);color:var(--fern);margin-left:8px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.leaves{position:absolute;right:-60px;bottom:-40px;width:min(620px,95vw);z-index:1;opacity:.95}
+.leaves use{transform-box:fill-box;transform-origin:50% 100%;animation:sway 6s ease-in-out infinite}
+.leaves use:nth-child(2n){animation-duration:8s;animation-delay:-2s}
+.leaves use:nth-child(3n){animation-duration:7s;animation-delay:-4s}
+@keyframes sway{0%,100%{rotate:-4deg}50%{rotate:5deg}}
+.hero h1,.hero p,.hero .btns{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero p{animation-delay:.15s}.hero .btns{animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+/* resumen */
+.about{display:grid;gap:28px;grid-template-columns:1fr}
+.about h2{font-size:clamp(2rem,6vw,3.4rem)}
+.about p{max-width:60ch}
+@media(min-width:820px){.about{grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}}
+/* servicios */
+.services{background:var(--fern)}
+.services h2{font-size:clamp(2rem,6vw,3.2rem);margin-bottom:36px}
+.grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--mist);border-radius:28px 28px 28px 6px;padding:28px}
+.card:nth-child(even){border-radius:28px 28px 6px 28px}
+.card svg{width:54px;height:54px;margin-bottom:14px}
+.card h3{font-size:1.5rem;margin-bottom:8px}
+/* contacto */
+.contact{background:var(--ink);color:var(--mist);text-align:left}
+.contact h2{font-size:clamp(2.2rem,7vw,4rem);margin-bottom:12px}
+.contact>.wrap>p{color:var(--fern);max-width:44ch;margin-bottom:28px}
+.info{display:grid;gap:14px;margin-top:44px;color:var(--fern);font-size:1rem}
+.info b{color:var(--mist);display:block}
+@media(min-width:700px){.info{grid-template-columns:repeat(3,1fr)}}
+footer{background:var(--ink);color:var(--fern);padding:0 0 32px;font-size:.9rem}
+/* tallo que crece al scrollear */
+.stem{position:fixed;left:14px;top:0;height:100vh;width:30px;z-index:5;display:none;pointer-events:none}
+@media(min-width:1000px){.stem{display:block}}
+.stem path{fill:none;stroke:var(--leaf);stroke-width:3;stroke-linecap:round}
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg class="stem" viewBox="0 0 30 1000" preserveAspectRatio="none" aria-hidden="true"><path id="stemPath" d="M15 1000 C0 880 30 780 15 680 C0 580 30 480 15 380 C0 280 30 180 15 0"/></svg>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="leaf" viewBox="0 0 100 100"><path d="M50 98C8 72 4 30 50 2c46 28 42 70 0 96Z" fill="currentColor"/><path d="M50 95V18" stroke="#14281E" stroke-opacity=".35" stroke-width="2" fill="none"/></symbol>
+  </defs>
+</svg>
+
+<header class="hero">
+  <svg class="leaves" viewBox="0 0 600 460" aria-hidden="true">
+    <use href="#leaf" x="250" y="170" width="150" height="150" style="color:#2E7D4F;rotate:-8deg"/>
+    <use href="#leaf" x="340" y="120" width="190" height="190" style="color:#3E9660"/>
+    <use href="#leaf" x="130" y="210" width="170" height="170" style="color:#BFD9B5"/>
+    <use href="#leaf" x="420" y="230" width="150" height="150" style="color:#2E7D4F"/>
+    <use href="#leaf" x="60" y="300" width="130" height="130" style="color:#3E9660"/>
+  </svg>
+  <div class="wrap">
+    <div class="brand" data-f="nombre">Planta tus Sueños</div>
+    <h1>Verde para adentro y para afuera.</h1>
+    <p>Plantas, insumos y trabajos de jardín, con presupuesto a medida.</p>
+    <div class="btns">
+      <a class="btn" data-f="wa" href="#contacto" target="_blank" rel="noopener noreferrer">Pedí tu presupuesto</a>
+      <a class="btn alt" href="#servicios">Ver qué hacemos</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap about">
+    <h2 class="rv">Un vivero que vive entre plantas.</h2>
+    <div class="rv" style="--d:.15s">
+      <p>Somos un vivero. Te ayudamos a elegir plantas para tu casa, tu patio o tu negocio, te vendemos todo lo que necesitan para crecer bien y, si no tenés tiempo o ganas de ensuciarte las manos, vamos y lo hacemos nosotros.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicios">
+  <div class="wrap">
+    <h2 class="rv">Qué hacemos</h2>
+    <div class="grid">
+      <article class="card rv">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><use href="#leaf" x="14" y="2" width="34" height="34" style="color:#2E7D4F"/><path d="M14 36h32l-4 20H18Z" fill="#14281E"/></svg>
+        <h3>Plantas de interior y exterior</h3>
+        <p>Variedades para cada rincón: con sol, con sombra, para balcón, patio o escritorio.</p>
+      </article>
+      <article class="card rv" style="--d:.1s">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><path d="M10 22h40v6H10Z" fill="#14281E"/><path d="M14 28h32l-3 26H17Z" fill="#2E7D4F"/></svg>
+        <h3>Insumos</h3>
+        <p>Tierra, macetas, fertilizantes y todo lo que necesitás para que tus plantas se queden.</p>
+      </article>
+      <article class="card rv" style="--d:.2s">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><path d="M44 6l10 10-6 6-10-10Z" fill="#14281E"/><path d="M40 20L16 44" stroke="#14281E" stroke-width="5" stroke-linecap="round"/><path d="M6 50l10-10 8 8-6 8Z" fill="#2E7D4F"/></svg>
+        <h3>Trabajos físicos</h3>
+        <p>Armado de jardines, plantación y mantenimiento. Vamos con las herramientas y los brazos.</p>
+      </article>
+      <article class="card rv" style="--d:.3s">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><path d="M30 6v26" stroke="#14281E" stroke-width="5" stroke-linecap="round"/><path d="M16 32h28l6 22H10Z" fill="#2E7D4F"/></svg>
+        <h3>Limpiezas</h3>
+        <p>Limpieza de jardines y espacios verdes, para que vuelvan a verse como tienen que verse.</p>
+      </article>
+    </div>
+    <p class="rv" style="margin-top:28px;font-weight:600">¿Tenés un proyecto? Pedinos un presupuesto a medida.</p>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <h2 class="rv">Hablemos de tus plantas.</h2>
+    <p class="rv">Escribinos y te respondemos lo antes posible.</p>
+    <div class="rv"><a class="btn" data-f="wa" href="#" target="_blank" rel="noopener noreferrer">Escribinos por WhatsApp</a></div>
+    <div class="info rv">
+      <div><b>Dónde estamos</b><span>Paso de los Libres,<br>Corrientes, Argentina</span></div>
+      <div><b>Horarios</b><span>Lunes a viernes de 7:00 a 21:00<br>Sábados de 9:00 a 18:00</span></div>
+      <div><b>Teléfonos</b><a href="tel:+5493772644268">+54 9 3772 644268</a><br><a href="tel:+5493772646783">+54 9 3772 646783</a></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">© <span id="y"></span> <span data-f="nombre">Planta tus Sueños</span></div></footer>
+
+<script>
+/* ====== EDITÁ SOLO ESTO ====== */
+const CONFIG = {
+  nombre: "Planta tus Sueños",
+  whatsapp: "5493772644268",   // código de país + número, sin + ni espacios
+  mensaje: "¡Hola! Vi la página de Planta tus Sueños y quiero pedir un presupuesto."
+};
+/* ============================== */
+const q=(s)=>document.querySelectorAll(s);
+const wa="https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(CONFIG.mensaje);
+q('[data-f="nombre"]').forEach(e=>e.textContent=CONFIG.nombre);
+q('[data-f="wa"]').forEach(e=>e.href=wa);
+document.title=CONFIG.nombre+" | Vivero en Paso de los Libres";
+document.getElementById("y").textContent=new Date().getFullYear();
+
+/* aparecer al scrollear */
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15});
+q(".rv").forEach(e=>io.observe(e));
+
+/* tallo que crece con el scroll */
+const p=document.getElementById("stemPath");
+const L=p.getTotalLength();
+p.style.strokeDasharray=L;
+function grow(){
+  const h=document.documentElement.scrollHeight-innerHeight;
+  const f=h>0?scrollY/h:0;
+  p.style.strokeDashoffset=L*(1-f);
+}
+addEventListener("scroll",grow,{passive:true});grow();
+</script>
+</body>
+</html>
